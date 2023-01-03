@@ -9,12 +9,14 @@
    border: #fbab40;
    height: 100vh;
    background-color: #242628;
-   background-image: url(../world.svg);
+   background-image: url(../backgrounds/vanishing-stripes.svg);
    background-repeat: no-repeat;
-   background-position-x: center;
-   background-position-y: 70px;
+   background-position-x: 0;
+   background-position-y: 0;
    background-origin: padding-box;
+   /* background by SVGBackgrounds.com */
  }
+
 
  h3, h1 {
    color: var(--indigo-1)
