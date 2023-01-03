@@ -9,12 +9,14 @@
    border: #fbab40;
    height: 100vh;
    background-color: #242628;
-   background-image: url(../backgrounds/vanishing-stripes.svg);
+   /* background-image: url(../backgrounds/vanishing-stripes.svg); */
+   /* background by SVGBackgrounds.com */
+   background-image: url(../backgrounds/low-poly-abstract-27111-by-starline-on-freepik.svg);
    background-repeat: no-repeat;
    background-position-x: 0;
    background-position-y: 0;
    background-origin: padding-box;
-   /* background by SVGBackgrounds.com */
+
  }
 
 
