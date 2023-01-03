@@ -1,50 +1,56 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Direct Upload Demo | Cloudflare Pages</title>
-    <link href="style.css" rel="stylesheet" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>James Green Development Sandbox Site</title>
+		<!-- the props -->
+		<link rel="stylesheet" href="https://unpkg.com/open-props" />
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <h3>Example project</h3>
-        <h1>Welcome to Cloudflare Pages</h1>
-        <p>
-          Upload your prebuilt assets directly to Pages and deploy <br />
-          your project to the Cloudflare edge within seconds.
-        </p>
-        <p>Create new deployments using:</p>
-        <section class="options">
-          <img src="assets/terminal.svg" />
-          <a
-            href="https://dash.cloudflare.com/?to=/:account/pages/new/wrangler-guide"
-            target="_blank"
-            > Wrangler CLI</a
-          >
-          <img src="assets/cloud-upload.svg" />
-          <a
-            href="https://dash.cloudflare.com/?to=/:account/pages/new/upload"
-            target="_blank"
-            > Dashboard</a
-          >
-        </section>
-      </div>
+		<!-- optional imports that use the props -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/normalize.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/buttons.min.css" />
 
-      <section class="learn-more">
-        <a
-          href="https://developers.cloudflare.com/pages/platform/direct-uploads"
-        >
-          <button>Learn more</button>
-        </a>
-      </section>
-      <div class="logo">
-        <a href="https://pages.cloudflare.com/" target="_blank">
-          <img src="assets/cloudflare-pages.svg"
-        /></a>
-      </div>
-    </div>
-  </body>
+		<!-- individual imports -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/indigo.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/indigo-hsl.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/easings.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/animations.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/sizes.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/open-props/gradients.min.css" />
+      
+		<link href="assets/styles/main.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h3>James' Sandbox</h3>
+				<h1>Welcome to my Technology Playground</h1>
+			</header>
+			<section class="options"></section>
+			<section class="learn-more"></section>
+			<div class="logo">
+				<a href="https://pages.cloudflare.com/" target="_blank">
+					<img src="assets/cloudflare-pages.svg"
+				/></a>
+			</div>
+		</div>
+	</body>
 </html>
