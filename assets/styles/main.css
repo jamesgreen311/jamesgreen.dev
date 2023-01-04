@@ -6,6 +6,17 @@
 	color: var(--indigo-2);
 }
 
+body {
+  background-color: #242628;
+  background-image: url(../backgrounds/low-poly-abstract-27111-by-starline-on-freepik.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -500px;
+  background-position-y: 0;
+  background-origin: padding-box;
+  height: 100vh;
+}
+
 header {
 	width: 80%;
 	margin: 20px 0;
@@ -25,6 +36,14 @@ section h3 {
 	color: var(--indigo-1);
 }
 
+section #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -35,6 +54,10 @@ section h3 {
 	margin: auto;
 	border: #fbab40;
 	height: 100vh;
+}
+
+.list {
+  margin: 10px 0;
 }
 
 .options {
