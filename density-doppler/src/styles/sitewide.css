@@ -72,9 +72,10 @@ select {
 
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(
-		0deg,
-		#fda503,
-		white
+		180deg,
+		hsl(56, 100%, 92%),
+		hsl(39, 98%, 50%) 45%,
+		hsl(28, 93%, 50%) 90%
 	);
 
 	--clr-blue-100: hsl(200, 80%, 80%);
@@ -86,7 +87,23 @@ select {
 	--clr-blue-700: hsl(200, 80%, 20%);
 	--clr-blue-800: hsl(200, 80%, 10%);
 
+	--clr-magenta-100: hsl(300, 80%, 80%);
+	--clr-magenta-200: hsl(300, 80%, 70%);
+	--clr-magenta-300: hsl(300, 80%, 60%);
+	--clr-magenta-400: hsl(300, 80%, 50%);
+	--clr-magenta-500: hsl(300, 80%, 40%);
+	--clr-magenta-600: hsl(300, 80%, 30%);
+	--clr-magenta-700: hsl(300, 80%, 20%);
+	--clr-magenta-800: hsl(300, 80%, 10%);
 
+	--clr-purple-100: hsl(275, 80%, 80%);
+	--clr-purple-200: hsl(275, 80%, 70%);
+	--clr-purple-300: hsl(275, 80%, 60%);
+	--clr-purple-400: hsl(275, 80%, 50%);
+	--clr-purple-500: hsl(275, 80%, 40%);
+	--clr-purple-600: hsl(275, 80%, 30%);
+	--clr-purple-700: hsl(275, 80%, 20%);
+	--clr-purple-800: hsl(275, 80%, 10%);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

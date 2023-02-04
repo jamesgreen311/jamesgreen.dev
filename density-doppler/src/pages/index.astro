@@ -1,84 +1,96 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<header>
-			<h3>James' Sandbox</h3>
-			<h1>Welcome to My Technology <span class="text-gradient">Playground</span> </h1>
-		</header>
-		<p class="instructions">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus fuga debitis nihil sit labore rerum porro amet excepturi quibusdam vitae temporibus quia necessitatibus, incidunt quod accusantium distinctio dolores eligendi. In minus ipsa et deleniti quis quaerat adipisci aut reprehenderit molestiae cumque impedit quam provident porro consectetur fuga veniam, doloremque a eos veritatis. Ratione saepe et voluptatem aut iure eos?
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Card 1"
-				body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus temporibus quam officiis iure, repellendus qui eum?"
-			/>
-			
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+   <main>
+      <header>
+         <h3>James' Sandbox</h3>
+         <h1>
+            Welcome to My Technology <span class="text-gradient"
+               >Playground</span
+            >
+         </h1>
+      </header>
+      <div class="introduction">
+         <p>
+            James is a retired IT professional with 38 years of web and
+            application building experience.
+         </p>
+         <p>
+            Since retiring, he has turned his attention to his first love,
+            <a href="https://walkingontheedge.studio" target="_blank"
+               >creating art</a>.
+         </p>
+         <p>
+            Web development is now a hobby but he still has many interests and
+            follows all the latest web technologies.
+         </p>
+      </div>
+      <ul role="list" class="link-card-grid">
+         <Card
+            href="https://walkingontheedge.studio"
+            title="Card 1"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus temporibus quam officiis iure, repellendus qui eum?"
+         />
+
+         <Card
+            href="https://walkingontheedge.studio"
+            title="Card 2"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus temporibus quam officiis iure, repellendus qui eum?"
+         />
+         <Card
+            href="https://walkingontheedge.studio"
+            title="Card 3"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus temporibus quam officiis iure, repellendus qui eum?"
+         />
+         <Card
+            href="https://walkingontheedge.studio"
+            title="Card 4"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus temporibus quam officiis iure, repellendus qui eum?"
+         />
+      </ul>
+   </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+   main {
+      margin: auto;
+      padding: 1.5rem;
+      max-width: 80ch;
+   }
+   h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+      line-height: 100%;
+   }
+   .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+   }
+   .introduction {
+      line-height: 1.6;
+      margin: 1rem 0;
+      border: 3px solid var(--clr-purple-600);
+      background-color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+   }
+   .introduction p {
+		padding-block: 5px;
+   }
+   .introduction strong {
+      color: rgb(var(--accent));
+   }
+   .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 1rem;
+      padding: 0;
+   }
 </style>
