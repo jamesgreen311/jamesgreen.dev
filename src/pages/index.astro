@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="James Green Web Development Sandbox">
+   <main>
+      <header>
+         <h3>The Sandbox</h3>
+         <h1>Welcome to My T3chnology Playground</h1>
+      </header>
+      <section class="introduction">
+         <p>
+            James is a retired IT professional with 38 years of web and
+            application building experience.
+         </p>
+         <p>
+            Since retiring, he has turned his attention to his first love,
+            <a href="https://walkingontheedge.studio" target="_blank"
+               >creating art</a
+            >.
+         </p>
+         <p>
+            Web development is now a hobby but he still has many interests and
+            follows all the latest web technologies.
+         </p>
+      </section>
+   </main>
+</Layout>
+
+<style>
+   main {
+      margin: auto;
+      padding: 1.5rem;
+      max-width: 100ch;
+   }
+   h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+      line-height: 100%;
+      color: hsl(0, 0%, 90%);
+   }
+   .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+   }
+   .introduction {
+      line-height: 1.6;
+      margin: 1rem 0;
+      border: 3px solid var(--clr-purple-600);
+      background-color: white;
+      padding: 1rem;
+      border-radius: 1rem;
+   }
+   .introduction p {
+		padding-block: 5px;
+   }
+   .introduction strong {
+      color: rgb(var(--accent));
+   }
+   .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+      gap: 1rem;
+      padding: 0;
+   }
+</style>
